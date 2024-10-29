@@ -30,6 +30,7 @@ input.onButtonPressed(Button.A, function() {
             neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Yellow))
             neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Green))
             basic.clearScreen()
+            neopixelStrip.show()
             basic.showNumber(count)
             basic.pause(1000)
         }
@@ -40,6 +41,7 @@ input.onButtonPressed(Button.A, function() {
             neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Yellow))
             neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
             basic.clearScreen()
+            neopixelStrip.show()
             basic.showNumber(count)
             basic.pause(1000)
         }
@@ -50,6 +52,7 @@ input.onButtonPressed(Button.A, function() {
             neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
             neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
             basic.clearScreen()
+            neopixelStrip.show()
             basic.showNumber(count)
             basic.pause(1000)
         }
@@ -60,13 +63,14 @@ input.onButtonPressed(Button.A, function() {
             neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
             neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
             basic.clearScreen()
+            neopixelStrip.show()
             basic.showNumber(count)
             basic.pause(1000)
         }
-        neopixelStrip.show()
         count = count - 1
     }
     neopixelStrip.clear()
+    neopixelStrip.show()
     basic.clearScreen()
     basic.showIcon(IconNames.Happy)
 })

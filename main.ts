@@ -23,7 +23,10 @@ basic.showIcon(IconNames.Happy)
 // Countdown from 4 on A button press.
 input.onButtonPressed(Button.A, function() {
     count = 4
+
     while (count > 0){
+        
+        // Light all neopixels when 4 and show number.
         if (count = 4) {
             neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
             neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Orange))
@@ -35,6 +38,7 @@ input.onButtonPressed(Button.A, function() {
             basic.pause(1000)
         }
 
+        // Light 3 neopixels when 3 and show number.
         if (count = 3) {
             neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
             neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Orange))
@@ -46,6 +50,7 @@ input.onButtonPressed(Button.A, function() {
             basic.pause(1000)
         }
 
+        // Light 2 neopixels when 2 and show number.
         if (count = 2) {
             neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
             neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Orange))
@@ -57,6 +62,7 @@ input.onButtonPressed(Button.A, function() {
             basic.pause(1000)
         }
 
+        // Light 1 neopixels when 1 and show number.
         if (count = 1) {
             neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
             neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
@@ -67,8 +73,10 @@ input.onButtonPressed(Button.A, function() {
             basic.showNumber(count)
             basic.pause(1000)
         }
+        // Subtract 1 from count variable.
         count = count - 1
     }
+    // Cleanup then back to happy.
     neopixelStrip.clear()
     neopixelStrip.show()
     basic.clearScreen()
